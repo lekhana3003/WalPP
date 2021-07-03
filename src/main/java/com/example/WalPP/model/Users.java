@@ -14,6 +14,9 @@ public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    private Float intialBalance;
+
+    private Float balance;
     public Integer getId() {
         return id;
     }
@@ -32,12 +35,12 @@ public class Users {
         this.user_id = user_id;
     }
 
-    public Float getIntial_balance() {
-        return intial_balance;
+    public Float getIntialBalance() {
+        return intialBalance;
     }
 
-    public void setIntial_balance(Float intial_balance) {
-        this.intial_balance = intial_balance;
+    public void setIntialBalance(Float intialBalance) {
+        this.intialBalance = intialBalance;
     }
 
     public Float getBalance() {
@@ -48,9 +51,7 @@ public class Users {
         this.balance = balance;
     }
 
-    private Float intial_balance;
 
-    private Float balance;
 
     // getters and setters...
 }

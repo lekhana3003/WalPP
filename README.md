@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a><img src="https://github.com/lekhana3003/WalPP/blob/master/docs/images/wallet-image.png" alt="Wallet"></a>
+  <a><img src="https://github.com/lekhana3003/WalPP/blob/main/docs/images/wallet-image.png" alt="Wallet"></a>
   <br>
   WalPP
   <br>
@@ -71,7 +71,7 @@ Some of the important api endpoints are as follows :
 ## Database Schema ##
 The current schema looks as follows:
 
-<img src=""https://github.com/lekhana3003/WalPP/blob/master/docs/images/database.png"" alt="spring boot"></a>
+<img src="https://github.com/lekhana3003/WalPP/blob/main/docs/images/database.png" alt="spring boot"></a>
 
 
 - The user keeps the details of user along with balance and intial balance of the user. The user id given is the unique key of the table.
@@ -251,7 +251,7 @@ It is presented well structured UI which has two specs :
 <p align="center">
     <b>End Points</b><br>
     <br>
-    <img width="600" src="https://github.com/lekhana3003/WalPP/blob/master/docs/images/all-end-points.png">
+    <img width="600" src="https://github.com/lekhana3003/WalPP/blob/main/docs/images/all-end-points.png">
 </p>
 
 ## Author ##

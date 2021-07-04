@@ -10,5 +10,10 @@ services:
       environment:
         MYSQL_ROOT_PASSWORD: <PASSWORD>
         MYSQL_DATABASE: walpp
-        MYSQL_USER: walpp-user
-        MYSQL_PASSWORD: <PASSWORD>
+    application:
+      build: .
+      container_name: walpp
+      ports:
+        - "8080:8080"
+      depends_on:
+        - mysql

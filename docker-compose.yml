@@ -1,0 +1,14 @@
+version: "3"
+services:
+    mysql:
+      image: mysql:latest
+      container_name: mysql-container
+      ports:
+        - 3306:3306
+      volumes:
+        - ./db/setup.sql:/docker-entrypoint-initdb.d/dump.sql
+      environment:
+        MYSQL_ROOT_PASSWORD: <PASSWORD>
+        MYSQL_DATABASE: walpp
+        MYSQL_USER: walpp-user
+        MYSQL_PASSWORD: <PASSWORD>

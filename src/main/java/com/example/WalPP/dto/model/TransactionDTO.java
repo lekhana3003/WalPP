@@ -1,13 +1,36 @@
-package com.example.WalPP.dto.request;
+package com.example.WalPP.dto.model;
+
+
+
+import com.example.WalPP.model.TransactionType;
 
 import java.time.LocalDateTime;
 
-public class CreditTransactionRequest {
+public class TransactionDTO {
     public Integer userId;
     public String transactionDetails;
     public String transactionID;
     public Float amount;
     public String partyName;
+    public TransactionType transactionType;
+    public LocalDateTime aftertimestamp;
+    public LocalDateTime beforetimestamp;
+    public LocalDateTime getAftertimestamp() {
+        return aftertimestamp;
+    }
+
+    public void setAftertimestamp(LocalDateTime aftertimestamp) {
+        this.aftertimestamp = aftertimestamp;
+    }
+
+    public LocalDateTime getBeforetimestamp() {
+        return beforetimestamp;
+    }
+
+    public void setBeforetimestamp(LocalDateTime beforetimestamp) {
+        this.beforetimestamp = beforetimestamp;
+    }
+
 
 
     public Integer getUserId() {
@@ -48,6 +71,14 @@ public class CreditTransactionRequest {
 
     public void setPartyName(String partyName) {
         this.partyName = partyName;
+    }
+
+    public TransactionType getTransactionType() {
+        return transactionType;
+    }
+
+    public void setTransactionType(TransactionType transactionType) {
+        this.transactionType = transactionType;
     }
 
 

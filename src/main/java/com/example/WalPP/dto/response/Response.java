@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.ToString;
 
 enum Status {
-    OK, BAD_REQUEST, EXCEPTION, NOT_FOUND, DUPLICATE_ENTITY
+    OK, BAD_REQUEST, EXCEPTION, NOT_FOUND, DUPLICATE_ENTITY,LOW_BALANCE
 }
 @ToString
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
@@ -56,6 +56,12 @@ public class Response<T> {
         Response<T> response = new Response<>();
         response.setErrors(message);
         response.setStatus(Status.BAD_REQUEST);
+        return response;
+    }
+    public static <T> Response<T> LowBalance(String message){
+        Response<T> response = new Response<>();
+        response.setErrors(message);
+        response.setStatus(Status.LOW_BALANCE);
         return response;
     }
 }
